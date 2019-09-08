@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    background-color: black;
+    display: flex;
+    flex-direction:column;  
+}
+
+@media (min-width:600px){
+    .header{
+      flex-direction: column-reverse;
+    }
+  }
+.header_image{
+    margin-right: 30px;
+    display: inline;
+    float: right;
+}
+.header_item{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    background-color: #4F4F4F;
+    padding: 20px;
+    margin-top: 20px;
+}
+.header_item:hover{
+    background-color: #60B752;
+    color: white;
+}
+.menu{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 600px){
+    .menu{
+        flex-direction: row;
+    }
+}
+/* parte que o manoel fez */
+
+.img__desc{
+    width: 100%;
+    height: auto;
+}
+.desc__titulo_image-1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(7, 6, 6);
+    padding: 20px;
+}
+.desc__titulo_image{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+@media(max-width:600px){
+    .desc__titulo_image{
+        font-size: 15px;
+    }
+}
+
+.desc__funcao{
+    max-width: 1200px; 
+    margin:auto;
+    border-width: auto;
+    border-color: rgb(170, 166, 166);
+    border-top-color: rgb(252, 252, 252);
+    border-style: solid; 
+    padding: auto;   
+    display: flex;
+    flex-direction: column;
+}
+.desc__bgc_color{
+    background-color: rgba(230, 231, 229, 0.979);
+}
+
+
+/* titulo DUAL BOOT */
+ .desc__titulo_1{ 
+    background-color: #60B752;
+    font-size: 24px;
+    color:rgb(253, 253, 253);
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    display: block;  
+    text-align: right; 
+    margin-left: auto;
+    margin-right: 700px; 
+    margin-top: 100px;
+}
+.desc__conteudo_1{
+    flex-direction: row;
+}
+.desc__imagem_1{
+    float: right;
+    padding: auto;
+    margin-top: 20px; 
+    margin-left: 20px; 
+    margin-right: 70px;
+}
+
+.desc__texto_1{
+    float: left;
+    text-align: left;
+    font-size: 19px;
+    width: 400px; 
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: 70px;
+    padding: auto;
+    color: rgb(15, 13, 13);
+}
+@media(max-width:1000px){
+    .desc__conteudo_1, .desc__imagem_1,.desc__titulo_1,.desc__texto_1{
+        padding: 5px;
+        margin: auto;
+        width: auto; 
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+@media(max-width:800px){
+    .desc__conteudo_1, .desc__imagem_1,.desc__titulo_1,.desc__texto_1{
+        padding: 5px;
+        margin: auto;
+        width: auto; 
+        margin-top: 10px;
+        text-align: center;
+    }
+    .desc__texto_1{
+        text-align: left;
+        font-size: 15px;
+    }
+}
+@media(max-width:600px){
+    .desc__conteudo_1, .desc__imagem_1,.desc__titulo_1,.desc__texto_1{
+        padding: 5px;
+        margin: auto;
+        width: auto; 
+        margin-top: 10px;
+        text-align: center;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .desc__texto_1{
+        text-align: left;
+        font-size: 15px;
+    }
+}
+/* titulo Menu */
+.desc__titulo_2{ 
+    background-color: #60B752;
+    font-size: 24px;
+    color:rgb(253, 253, 253);
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    display: block;  
+    text-align: right; 
+    margin-left: auto;
+    margin-right: 700px; 
+    margin-top: 50px;
+}
+.desc__conteudo_2{
+    flex-direction: row;
+}
+.desc__imagem_2{
+    float: right;
+    padding: auto;
+    margin-top: 20px; 
+    margin-left: auto; 
+    margin-right: 70px;
+    margin-bottom: 50px;
+}
+
+.desc__texto_2{
+    float: left;
+    text-align: left;
+    font-size: 19px;
+    width: 350px; 
+    margin-top: 90px;
+    margin-right: 10px;
+    margin-left: 70px;
+    padding: auto;
+    color: rgb(15, 13, 13);
+}
+@media(max-width:1000px){
+    .desc__conteudo_2, .desc__imagem_2,.desc__titulo_2,.desc__texto_2{
+        padding: 5px;
+        margin: auto;
+        width: auto; 
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+@media(max-width:800px){
+    .desc__conteudo_2, .desc__imagem_2,.desc__titulo_2,.desc__texto_2{
+        padding: 5px;
+        margin: auto;
+        width: auto; 
+        margin-top: 10px;
+        text-align: center;
+    }
+    .desc__texto_2{
+        text-align: left;
+        font-size: 15px;
+    }
+}
+@media(max-width:600px){
+    .desc__conteudo_2, .desc__imagem_2,.desc__titulo_2,.desc__texto_2{
+        padding: 5px;
+        margin: auto;
+        width: auto; 
+        margin-top: 10px;
+        text-align: center;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .desc__texto_2{
+        text-align: left;
+        font-size: 15px;
+    }
+}
+
+/* titulo TERMINAL */
+.desc__titulo_3{ 
+    background-color: #60B752;
+    font-size: 24px;
+    color:rgb(253, 253, 253);
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    display: block;    
+    text-align: left; 
+    margin-left: 700px;
+    margin-right: auto; 
+    margin-top: 100px;
+      
+}
+.desc__conteudo_3{
+    flex-direction: row;
+}
+.desc__imagem_3{
+    float: left;
+    padding: auto;
+    margin-right: 500px;
+    margin-left: 70px;
+    margin-top: -200px;
+    margin-bottom: 50px;
+}
+.desc__texto_3{
+    float: right;
+    text-align: left;
+    font-size: 19px;
+    width: 400px; 
+    margin-top: 100px;
+    margin-right: 70px; 
+    padding: auto;
+    color: rgb(15, 13, 13);
+}
+@media(max-width:1000px){
+    .desc__conteudo_3, .desc__imagem_3,.desc__titulo_3,.desc__texto_3{
+        padding: 5px;
+        margin: auto;
+        width: auto; 
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+@media(max-width:800px){
+    .desc__conteudo_3, .desc__imagem_3,.desc__titulo_3,.desc__texto_3{
+        padding: 5px;
+        margin: auto;
+        width: auto; 
+        margin-top: 10px;
+        text-align: center;
+    }
+    .desc__texto_3{
+        text-align: left;
+        font-size: 15px;
+    }
+}
+@media(max-width:600px){
+    .desc__conteudo_3, .desc__imagem_3,.desc__titulo_3,.desc__texto_3{
+        padding: 5px;
+        margin: auto;
+        width: auto; 
+        margin-top: 10px;
+        text-align: center;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .desc__texto_3{
+        text-align: left;
+        font-size: 15px;
+    }
+}
+
+/* titulo Gerenciador de aplicativos */
+.desc__titulo_4{ 
+    background-color: #60B752;
+    font-size: 24px;
+    color:rgb(253, 253, 253);
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    display: block;    
+    text-align: left; 
+    margin-left: 700px;
+    margin-right: auto; 
+    margin-top: 100px;
+      
+}
+.desc__conteudo_4{
+    flex-direction: row;
+}
+.desc__imagem_4{
+    float: left;
+    padding: auto;
+    margin-right: 500px;
+    margin-left: 70px;
+    margin-top: -200px;
+    margin-bottom: 50px;
+}
+.desc__texto_4{
+    float: right;
+    text-align: left;
+    font-size: 19px;
+    width: 400px; 
+    margin-top: 150px;
+    margin-right: 70px; 
+    padding: auto;
+    color: rgb(15, 13, 13);
+}
+@media(max-width:1000px){
+    .desc__conteudo_4, .desc__imagem_4,.desc__titulo_4,.desc__texto_4{
+        padding: 5px;
+        margin: auto;
+        width: auto; 
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+@media(max-width:800px){
+    .desc__conteudo_4, .desc__imagem_4,.desc__titulo_4,.desc__texto_4{
+        padding: 5px;
+        margin: auto;
+        width: auto; 
+        margin-top: 10px;
+        text-align: center;
+        
+    }
+    .desc__texto_4{
+        text-align: left;
+        font-size: 15px;
+    }
+}
+@media(max-width:600px){
+    .desc__conteudo_4, .desc__imagem_4,.desc__titulo_4,.desc__texto_4{
+        padding: 5px;
+        margin: auto;
+        width: auto; 
+        margin-top: 10px;
+        text-align: center;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .desc__texto_4{
+        text-align: left;
+        font-size: 15px;
+    }
+}
+.partners{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #F6F6F6;
+    padding: 40px;
+    line-height: 25px;
+}
+.partners__image{
+    line-height: 30px;
+    padding: 10px;
+}
+.footer{
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    background-color: rgb(122, 122, 122);
+    text-align: center;
+}
+/* fim da parte Manoel*/
