@@ -6,6 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Linux Mint</title>
   <link href="css/style.css" rel="stylesheet" />
+  <style>
+    .main_page
+    {
+      display: flex;
+      flex-direction: row;      
+      width: 100%;      
+    }
+
+    .main_page img
+    {  
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/mint-wallpaper-1.jpg');
+      background-repeat: no-repeat;
+     
+    }
+
+    .col-50{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      text-align: center;     
+      justify-content: center;      
+    }
+
+    .col-50 h1{
+      display: block;
+      position: relative;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      color: white;
+      font-family: Roboto;
+      font-style: bold;
+    }
+    .col-50 button{
+      position: relative;
+      height:  50px;
+      width: 200px;
+      text-align: center;
+      margin-left: 10px;
+      font-family: Roboto;
+      font-style: bold;
+      color: white;
+      background-color: #60B752;
+      border-style: none;
+      border-radius: 5px;      
+    }
+  </style>
 </head>
 
 <body>
@@ -44,6 +96,17 @@
       </ul>
     </nav>
   </header>
+
+  <div class="main_page">
+        <img src="../Site-Linux-Mint/images/mint-wallpaper-1.jpg" alt="">        
+        <div class="col-50">
+            <h1>Our latest release is Linux Mint 19.2, codename "Tina".</h1>
+            <button type="button">DOWNLOAD</button>
+        </div>    
+  </div>
+  <!--
+
+  
   <div class="desc__funcao ">
     <section>
       <div class="desc__linux_imagem">
@@ -177,7 +240,9 @@
       </div>
   
     </section>
+
   </div>
+  -->
     <footer class="footer">
       <p>Linux Mint is copyrighted 2006 and trademarked through the Linux Mark Institute. All rights reserved. Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries.</p>
     </footer>
