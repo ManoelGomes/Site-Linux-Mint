@@ -16,12 +16,9 @@
 
     .main_page img
     {  
-      position: absolute;
+      display: flex;
       width: 100%;
       height: 100%;
-      background-image: url('images/mint-wallpaper-1.jpg');
-      background-repeat: no-repeat;
-     
     }
 
     .col-50{
@@ -33,7 +30,18 @@
       text-align: center;     
       justify-content: center;      
     }
-
+    @media (max-width:800px){
+      .col-50{
+        width: 100%;
+      }
+      .main_page img{
+        height: 800px;
+      }
+    }
+    .main__info{
+      display: block;
+      margin-left: 15px;
+    }
     .col-50 h1{
       display: block;
       position: relative;
@@ -100,8 +108,11 @@
   <div class="main_page">
         <img src="../Site-Linux-Mint/images/mint-wallpaper-1.jpg" alt="">        
         <div class="col-50">
-            <h1>Our latest release is Linux Mint 19.2, codename "Tina".</h1>
-            <button type="button">DOWNLOAD</button>
+           <div class="main__info">
+              <h1>Our latest release is Linux Mint 19.2, codename "Tina".</h1>
+              <button type="button">DOWNLOAD</button>
+           </div>
+            
         </div>    
   </div>
   <!--
