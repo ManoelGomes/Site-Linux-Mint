@@ -176,6 +176,63 @@
         display: none;
       }
   }
+
+  .main_page
+  {
+    display: flex;
+    flex-direction: row;      
+    width: 100%;      
+  }
+  .main_page img
+  {  
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .col-50{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    text-align: center;     
+    justify-content: center;      
+  }
+  @media (max-width:800px){
+    .col-50{
+      width: 100%;
+    }
+    .main_page img{
+      height: 800px;
+    }
+  }
+  .main__info{
+    display: block;
+    margin-left: 15px;
+  }
+  .col-50 h1{
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: white;
+    font-family: Roboto;
+    font-style: bold;
+  }
+  .col-50 button{
+    position: relative;
+    height:  50px;
+    width: 200px;
+    text-align: center;
+    margin-left: 10px;
+    font-family: Roboto;
+    font-style: bold;
+    color: white;
+    background-color: #60B752;
+    border-style: none;
+    border-radius: 5px;      
+  }
 /* parte que o manoel fez */
 .desc__quadro{
     display: flex;
