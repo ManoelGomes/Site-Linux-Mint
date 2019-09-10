@@ -448,6 +448,7 @@
 .cards{
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 .cards__section{
     background-color:#F6F6F6;
@@ -464,16 +465,16 @@
 }
 .title_mint h1{
     background-color: rgba(85, 198, 67, 0.92);
-    font-size: 24px;
+    font-size: 30px;
     font-style:bold;
     display: inline;
     padding: 10px;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 140px;
+    padding-right: 140px;
 
 }
 .cards__content{
-    width: 30%;
+    width: 22%;
     background: #FFFFFF;
     border: 1px solid #60B752;
     border-radius: 20px;
