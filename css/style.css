@@ -327,7 +327,7 @@
   padding: auto;
   margin-right: 500px;
   margin-left: 70px;
-  margin-top: 50px;
+  margin-top: -180px; /*modificado*/
   margin-bottom: 50px;
 }
 .desc__linux_texto{
@@ -335,10 +335,11 @@
   text-align: left;
   font-size: 19px;
   width: 400px; 
-  margin-top: -350px;
+  margin-top: 200px;
   margin-right: 70px; 
   padding: auto;
   color: rgb(15, 13, 13);
+  font-family: 'Roboto', sans-serif;
 }
 @media(max-width:600px){
   .desc__linux_texto{
@@ -348,17 +349,17 @@
     margin-top: auto;
     text-align: left;
     margin-left: 5px;
+    font-size: 16px;
   }
   .desc__linux_titulo{
     text-align: center;
   }
   .desc__linux_imagem{
-    width: 100%;
-    height: auto;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: auto;
     margin-top: auto;
+    float: left;
   }
 }
 
@@ -382,6 +383,7 @@
   margin-left: 150px;
   width: 300px;
   margin-top: 100px;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media(max-width:600px){
@@ -392,6 +394,7 @@
     margin-top: auto;
     text-align: left;
     margin-left: 5px;
+    font-size: 16px;
   }
   .desc__linux_titulo_2{
     text-align: center;
@@ -400,7 +403,6 @@
     height: auto;
     padding-right: 150px; 
     padding-left: 5px;
-    
   }
 }
 /* titulo DUAL BOOT */
@@ -748,6 +750,124 @@
         text-align: left;
         font-size: 15px;
     }
+}
+/* copiar na pasta principal*/
+.desc__download_titulo{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+/*caixa download*/
+
+.box {
+  width: 20%;
+  float:left;
+  min-height:20rem;
+  margin:2% 1%;
+  padding: 0.5% 4%;
+  line-height:1.2;
+  border-radius: 1rem;
+  margin-left: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+@media(max-width:600px){
+  .box{
+    margin: auto;
+    width: auto;
+    margin-top: 20px;
+    padding: auto;
+    font-size: 13px;
+  }
+  .box p{
+    font-size: 14px;
+  }
+  .titulo .desc__download_titulo{
+    text-align: center;
+  }
+}
+.borda1:hover{
+  border: solid rgb(78, 216, 78);
+}
+.imagem__box{
+  margin-top: 20px;
+}
+
+.borda1 {
+  border: 0.1rem solid #60B752;
+}
+.borda1:hover{
+  border: solid rgb(78, 216, 78);
+}
+.borda2 {
+  border: 0.1rem solid #60B752;
+}
+.borda2:hover{
+  border: solid rgb(78, 216, 78);
+}
+.borda3 {
+  border: 0.1rem solid #60B752;
+}
+.borda3:hover{
+  border: solid rgb(78, 216, 78);
+}
+.cor1 {
+  color: rgb(12, 10, 10);
+}
+.cor2 {
+  color: black;
+}
+.cor3 {
+  color: black;
+}
+.fundo1 {
+  background: white;
+}
+.fundo2 {
+  background: white;
+}
+.fundo3 {
+  background: white;
+}
+.box h2 {
+  margin:0;
+  font-size:10px;
+  color:white;
+  font-size: 19px;
+  padding: 20px;
+  margin-top: 7px;
+}
+.box p {
+  margin:3% 0;
+  font-size:17px;
+  font-family: 'Roboto', sans-serif;
+}
+.titulo{
+  background-color: #60B752;
+  text-align: center;
+  border-radius: 10px;
+}
+.dowlload__botao{
+  background-color: #60B752;
+  text-align: center;
+  border-radius: 10px;
+  margin:0;
+  color:white;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 15px;
+}
+.box a{
+  text-decoration: none;
+}
+.box a:hover{
+  text-decoration: underline;
+}
+.dowlload__botao:hover{
+  background-color: rgba(95, 183, 82, 0.404);
 }
 /* fim da parte Manoel*/
 .partners{
