@@ -7,55 +7,44 @@
   <title>Linux Mint</title>
   <link href="css/style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="js/script.js">  </script>
 </head>
 
 <body>
-  <!-- #Menu Lateral -->
-  <header class="lheader">
-    <input type="checkbox" class="checkmenu" id="enablemenu" />
-    <label for="enablemenu" class="menuico">
-      <img src="../Site-Linux-Mint/images/menu/baseline_menu_white_18dp.png" alt="Menu Icone" />
-    </label>
-    <div class="llogo">
-      <img src="../Site-Linux-Mint/images/menu/linux_mint_logo.svg" alt="Logo Linux Mint" />
+  <nav class="nav">
+    <div class="hamburg">
+        <input class="input" type="checkbox" id="enablemenu" onclick="EnableMenu()" />
+        <label for="enablemenu">
+            <img src="images/menu/baseline_menu_white_18dp.png" alt="Menu Icone" />
+        </label>
+        <img src="images/menu/Linux_Mint_logo_submission.svg" alt="" class="img_humburg" id="img_logo">
     </div>
-    <div class="barra_lateral">
-      <ul class="lmenu">
-        <li class="lmenu__item"><a href="#">Inicio</a></li>
-        <li class="lmenu__item"><a href="#">Sobre</a></li>
-        <li class="lmenu__item"><a href="#">Aplicativos</a></li>
-        <li class="lmenu__item"><a href="#">Download</a></li>
-        <li class="lmenu__item"><a href="#">Parceiros</a></li>
-      </ul>
-    </div>
-  </header>
-  <!-- #Menu Horizontal -->
-  <header class="header">
-    <nav>
-      <div class="logo">
-        <img src="../Site-Linux-Mint/images/Linux_Mint_logo_submission.svg" alt="" />
-      </div>
-      <ul class="menu">
-        <li class="menu__item"><a href="#">Inicio</a></li>
-        <li class="menu__item"><a href="#">Sobre</a></li>
-        <li class="menu__item"><a href="#">Aplicativos</a></li>
-        <li class="menu__item"><a href="#">Download</a></li>
-        <li class="menu__item"><a href="#">Parceiros</a></li>
-      </ul>
-    </nav>
-  </header>
+    <ul class="ul_menu_top" id="menu_top">
+        <li><a href="#section1">Inicio</a></li>
+        <li><a href="#section2">Sobre</a></li>
+        <li><a href="#section3">Aplicativos</a></li>
+        <li><a href="#section1">Download</a></li>
+        <img src="images/menu/Linux_Mint_logo_submission.svg" alt="" class="img_menu">
+    </ul>
+
+    <ul class="ul_menu_rigth" id="menu_right">
+        <li><a href="#section1">Inicio</a></li>
+        <li><a href="#section2">Sobre</a></li>
+        <li><a href="#section3">Aplicativos</a></li>
+        <li><a href="#section1">Download</a></li>
+        <li><a href="#">Parceiros</a></li>
+    </ul>
+</nav>
 
 
-  <div class="main_page">
-    <img src="../Site-Linux-Mint/images/mint-wallpaper-1.jpg" alt="">
-    <div class="col-50">
-      <div class="main__info">
-        <h1>Our latest release is Linux Mint 19.2, codename "Tina".</h1>
-        <button type="button">DOWNLOAD</button>
-      </div>
-
+<section class="section" id="section1">
+    <div class="main">           
+        <img class="main_img" id="main_img" alt="Flying Kites">
+        <div class="main_text">
+            <h1>Our latest release is Linux Mint 19.2, codename "Tina".</h1>                
+        </div>
     </div>
-  </div>
+</section>
 
   <section class="cards__section">
     <div class="title_mint">
