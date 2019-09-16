@@ -306,9 +306,7 @@
     max-width: 1200px; 
     margin:auto;
     border-width: auto;
-    border-color: rgb(170, 166, 166);
     border-top-color: rgb(252, 252, 252);
-    border-style: solid; 
     padding: auto;   
     display: flex;
     flex-direction: column;
