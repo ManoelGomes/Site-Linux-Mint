@@ -420,9 +420,7 @@
     display: flex;
     flex-direction: column;
 }
-.desc__bgc_color{
-    background-color: rgba(230, 231, 229, 0.979);
-}
+
 /* notebook inicio*/
 .desc__linux_titulo{ 
   font-size: 24px;
