@@ -8,24 +8,7 @@
   <link href="css/style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <script type="text/javascript" src="js/script.js">  </script>
-  <button onclick="topFunction()" id="Btn__subir" title="Go to top">Subir</button>
-    <script>
-        //Get the button
-        var mybutton = document.getElementById("Btn__subir");
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-        </script>
+  
 </head>
 
 <body>
@@ -98,6 +81,24 @@
 
   <!-- parte que o manoel fez -->
   <div class="desc__funcao ">
+    <button onclick="topFunction()" id="Btn__subir" title="Go to top">Subir</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("Btn__subir");
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
     <section>
       <!-- modificado -->
       <div class="desc__linux_texto">
