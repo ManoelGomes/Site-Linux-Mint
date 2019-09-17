@@ -8,6 +8,24 @@
   <link href="css/style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <script type="text/javascript" src="js/script.js">  </script>
+  <button onclick="topFunction()" id="Btn__subir" title="Go to top">Subir</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("Btn__subir");
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </head>
 
 <body>
@@ -23,7 +41,7 @@
         <li><a href="#section1">Inicio</a></li>
         <li><a href="#section2">Sobre</a></li>
         <li><a href="#section3">Aplicativos</a></li>
-        <li><a href="#section1">Download</a></li>
+        <li><a href="#section4">Download</a></li>
         <img src="images/menu/Linux_Mint_logo_submission.svg" alt="" class="img_menu">
     </ul>
 
@@ -31,8 +49,8 @@
         <li><a href="#section1">Inicio</a></li>
         <li><a href="#section2">Sobre</a></li>
         <li><a href="#section3">Aplicativos</a></li>
-        <li><a href="#section1">Download</a></li>
-        <li><a href="#">Parceiros</a></li>
+        <li><a href="#section4">Download</a></li>
+        <li><a href="5">Parceiros</a></li>
     </ul>
 </nav>
 
@@ -106,7 +124,7 @@
       </div>
 
     </section>
-    <section>
+    <section id="section2">
       <div>
         <h1 class="desc__titulo_1">Dual Boot</h1>
       </div>
@@ -149,15 +167,7 @@
         <img src="images/Menu.png" height=auto width=100% alt="Menu Linux Mint">
       </div>
     </section>
-    <section>
-      <div class="desc__titulo_image">
-        <p>Escolha entre os milhares de temas e papéis de parede para o sistema ficar do jeito que você quiser. </p>
-      </div>
-      <div>
-        <img src="images/papel_de_parede.jpg" height=auto width=100% alt="Menu Linux Mint">
-      </div>
-    </section>
-    <section>
+    <section id="section3">
       <div>
         <h1 class="desc__titulo_4">Loja de Aplicativos</h1>
       </div>
@@ -170,20 +180,66 @@
       </div>
     </section>
     <section>
-      <div>
-        <h1 class="desc__titulo_image-2">Aplicativos Linux Mint</h1>
-      </div>
-      <div>
-        <img src="images/image 2.1.png" height=auto width=100% alt="Aplicativos">
-      </div>
-    </section>
-    <section>
-      <div>
-        <h1 class="desc__titulo_image-2">Jogue, assita a seus videos, converse.</h1>
-      </div>
-      <div>
-        <img src="images/multimidia_linux.jpg" height=auto width=100% alt="Multimidia">
-      </div>
+      <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <div class="text">Modifique o linux mint para ficar do seu jeito</div>
+            <img src="images/papel_de_parede.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/multimidia_linux.jpg" style="width:100%">
+            <div class="text">Jogue, assita seus videos, converse.</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/image 2.1.png" style="width:100%">
+            <div class="text">Aplicativos Linux Mint</div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+          </div>
+          
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+          <script>
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+              }
+              </script>
+  </section>
     </section>
     <!-- copiar para principal -->
     <section>
