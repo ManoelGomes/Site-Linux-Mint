@@ -530,7 +530,7 @@
   padding: 15px;
   border-radius: 4px;
 }
-@media(max-width:600px){
+@media(max-width:300px){
   #Btn__subir{
    background-color:rgb(27, 172, 27);
    color: white;
