@@ -807,10 +807,43 @@
     align-content: center;
     margin: 20px;
 }
+.cards__content:hover{
+    border-color: rgba(14, 8, 8, 0.534);
+    box-shadow: inset 0 0 1em, 0 0 1em rgb(41, 212, 26);
+}
 .cards__content_image{
     padding-bottom: 10px;
     width: 80px;
     height: 80px;
+}
+/*acrescentado para smartphone*/
+  @media(max-width:600px){
+    .cards{
+      display: block;
+      width: auto;
+      height: auto;
+    }
+    .cards__section{
+      padding: auto;
+      margin: auto;
+      width: auto; 
+      font-size: 16px;
+    }
+    .cards__content{
+      padding: auto;
+      margin: auto;
+      margin-top: 10px;
+      width: auto;
+      font-size: 15px
+    }
+    .cards__content_image{
+      height: auto;
+      margin: auto;
+  }
+  .title_mint h1{
+    margin: auto;
+    padding: 10px;
+  }
 }
 
 /* titulo Gerenciador de aplicativos */
