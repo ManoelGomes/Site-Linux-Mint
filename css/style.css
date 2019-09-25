@@ -9,6 +9,11 @@
     margin: 0 auto;
 }
 
+body{
+  background-color: #eee;
+}
+
+
 /* Dhany e Wallyson*/
 .header{
     width: 100%;
@@ -1063,69 +1068,6 @@
 
 /*** Colunas **/
 
-
-
-.col-md-2, .col-md-3,  .col-md-4, .col-md-6, .col-md-8, .col-md-10, .col-md-12{
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  
-  @media (min-width: 992px) {
-    .col-md-2, .col-md-3,  .col-md-4, .col-md-6, .col-md-8, .col-md-10, .col-md-12 {
-      float: left;
-    }
-    .col-md-12 {
-      width: 100%;
-    }
-    .col-md-10 {
-      width: 83.33333333%;
-    }
-    .col-md-8 {
-      width: 66.66666667%;
-    }
-    .col-md-6 {
-      width: 50%;
-    }
-    .col-md-4 {
-      width: 33.33333333%;
-    }
-    .col-md-3 {
-      width: 25%;
-    }
-    .col-md-2 {
-      width: 16.66666667%;
-    }
-    .col-md-offset-1 {
-      margin-left: 8.33333333%;
-    }
-  }
-  /**** Card ****/
-  .card {
-    background: #fff;
-    box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23), 0 20px 25px 0px rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    margin-bottom: 30px;
-    -o-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
-    -ms-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
-    transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
-  }
-  .card:not(.card-plain):not(.card-price):hover {
-    -webkit-transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    -o-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03);
-    box-shadow: 0 26px 50px -10px rgba(0, 0, 0, 0.38), 0 10px 20px 0px rgba(0, 0, 0, 0.2), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
-  }
-   
-    .card a {
-      opacity: .85;
-    }
-    .card:hover .header {
-      opacity: 1;
-    }
 
 /**********************************************************
 **********************************************************/

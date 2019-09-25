@@ -5,10 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Linux Mint</title>
-  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="js/script.js">  </script>
-  
+  <script rel="stylesheet" type="text/javascript" src="js/script.js">  </script>  
 </head>
 
 <body>
@@ -18,7 +17,7 @@
         <label for="enablemenu">
             <img src="images/menu/baseline_menu_white_18dp.png" alt="Menu Icone" />
         </label>
-        <img src="images/menu/Linux_Mint_logo_submission.svg" alt="" class="img_humburg" id="img_logo">
+        <img src="images/menu/Linux_Mint_logo_submission.svg" alt="Logo Linux Mint" class="img_humburg" id="img_logo">
     </div>
     <ul class="ul_menu_top" id="menu_top">
         <li><a href="#section1">Inicio</a></li>
@@ -26,7 +25,7 @@
         <li><a href="#section3">Aplicativos</a></li>
         <li><a href="#section4">Download</a></li>
         <li><a href="#section5">Parceiros</a></li>
-        <img src="images/menu/Linux_Mint_logo_submission.svg" alt="" class="img_menu">
+        <img src="images/menu/Linux_Mint_logo_submission.svg" alt="Logo Linux Mint" class="img_menu">
     </ul>
 
     <ul class="ul_menu_rigth" id="menu_right">
@@ -41,7 +40,7 @@
 
 <section class="section" id="section1">
     <div class="main">           
-        <img class="main_img" id="main_img" alt="Flying Kites">
+        <img class="main_img" id="main_img" alt="Backgroud linux mint">
         <div class="main_text">
             <h1>Our latest release is Linux Mint 19.2, codename "Tina".</h1>                
         </div>
@@ -53,23 +52,6 @@
   <!-- parte que o manoel fez -->
   <div class="desc__funcao ">
     <button onclick="topFunction()" id="Btn__subir" title="Go to top">Subir</button>
-    <script>
-        //Get the button
-        var mybutton = document.getElementById("Btn__subir");
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-        </script>
     <section>
       <!-- modificado -->
       <div class="desc__linux_texto">
@@ -101,23 +83,23 @@
     </div>
     <div class="cards">
       <div class="cards__content">
-        <img src="images/888918.jpg" class="cards__content_image" /><br>
+        <img src="images/888918.jpg" alt="Open Source Linux Mint" class="cards__content_image" /><br>
         <h1>Open Source</h1><br>
         <p>
           O Linux Mint é livre para baixar, usar e compartilhar, sendo livre
           de custos e de código aberto.
         </p>
       </div>
-      <div class="cards__content" class="cards__content_image">
-        <img src="images/5a66de1481e577294f27e683a569bc42---cone-de-cadeado-simples-by-vexels.jpg" /><br>
+      <div class="cards__content" alt="Seguran�a Linux Mint" class="cards__content_image">
+        <img src="images/5a66de1481e577294f27e683a569bc42---cone-de-cadeado-simples-by-vexels.jpg" alt ="Seguran�a Linux Mint"/><br>
         <h1>Seguro e Confiável</h1><br>
         <p>
           É seguro e confiável. Graças a uma abordagem conservadora para atualizações de software, um gerenciador
           de atualização exclusivo e a robustez de sua arquitetura Linux, o Linux Mint requer pouca manutenção.
         </p>
       </div>
-      <div class="cards__content" class="cards__content_image">
-        <img src="images/125718.jpg" /> <br>
+      <div class="cards__content" alt="Dirigido pela comunidade linux mint" class="cards__content_image">
+        <img src="images/125718.jpg" alt ="Seguran�a Linux Mint"/> <br>
         <h1>Dirigido pela Comunidade</h1><br>
         <p>
           Os usuários são encorajados a enviar feedbacks ao projeto para que suas ideias possam ser usadas para
@@ -189,18 +171,18 @@
           <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
             <div class="text">Modifique o linux mint para ficar do seu jeito</div>
-            <img src="images/papel_de_parede.jpg" style="width:100%">
+            <img src="images/papel_de_parede.jpg" alt="Papel de parede linux mint" style="width:100%">
           </div>
           
           <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
-            <img src="images/multimidia_linux.jpg" style="width:100%">
+            <img src="images/multimidia_linux.jpg" alt="Multimidia Linux mint" style="width:100%">
             <div class="text">Jogue, assita seus videos, converse.</div>
           </div>
           
           <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
-            <img src="images/image 2.1.jpg" style="width:100%">
+            <img src="images/image 2.1.jpg" alt="Aplicativos Linux mint"  style="width:100%">
             <div class="text">Aplicativos Linux Mint</div>
           </div>
           
@@ -215,34 +197,6 @@
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
           </div>
-          <script>
-              var slideIndex = 1;
-              showSlides(slideIndex);
-              
-              function plusSlides(n) {
-                showSlides(slideIndex += n);
-              }
-              
-              function currentSlide(n) {
-                showSlides(slideIndex = n);
-              }
-              
-              function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "block";  
-                dots[slideIndex-1].className += " active";
-              }
-              </script>
   </section>
   
     <!-- copiar para principal -->
@@ -263,10 +217,10 @@
           <li>Resolução mínima de tela de 1024x768</li>
         </ul>
         <div>
-          <img class="imagem__box" src="images/tinalinuxtina.jpg" width="95%">
+          <img class="imagem__box" src="images/tinalinuxtina.jpg" alt="Download Linux Mint Xfce" width="95%">
         </div>
         <div>
-          <a href="http://mirror.ufscar.br/mint-cd/stable/19.2/linuxmint-19.2-xfce-64bit.iso">
+          <a href="https://mirror.ufscar.br/mint-cd/stable/19.2/linuxmint-19.2-xfce-64bit.iso">
             <h1 class="dowlload__botao">Download 64-bit</h1>
           </a>
         </div>
@@ -284,10 +238,10 @@
           <li>Resolução mínima de tela de 1024x768</li>
         </ul>
         <div>
-          <img class="imagem__box" src="images/linuxcinnamon.jpg" width="100%">
+          <img class="imagem__box" src="images/linuxcinnamon.jpg" alt="Download Linux Mint Cinnamon" width="100%">
         </div>
         <div>
-          <a href="http://mirror.ufscar.br/mint-cd/stable/19.2/linuxmint-19.2-cinnamon-64bit.iso">
+          <a href="https://mirror.ufscar.br/mint-cd/stable/19.2/linuxmint-19.2-cinnamon-64bit.iso">
             <h1 class="dowlload__botao">Download 64-bit</h1>
           </a>
         </div>
@@ -305,10 +259,10 @@
           <li>Resolução mínima de tela de 1024x768</li>
         </ul>
         <div>
-          <img src="images/linuxmate.jpg" width="100%" class="imagem__box">
+          <img src="images/linuxmate.jpg" width="100%" alt="Download Linux Mint Mate" class="imagem__box">
         </div>
         <div>
-          <a href="http://mirror.ufscar.br/mint-cd/stable/19.2/linuxmint-19.2-mate-64bit.iso">
+          <a href="https://mirror.ufscar.br/mint-cd/stable/19.2/linuxmint-19.2-mate-64bit.iso">
             <h1 class="dowlload__botao">Download 64-bit</h1>
           </a>
         </div>
@@ -325,14 +279,14 @@
           facilitam nosso trabalho e nos permitem focar em nossa própria área de especialização.</p>
       </div>
       <div class="partners__image">
-        <a href="https://ayksolutions.com/"><img src="images/ayk.jpg" alt="" style="height: 60px;"></a>
-        <a href="https://www.eukhost.com/dedicated-servers/"><img src="images/eukhost.jpg" alt=""
+        <a href="https://ayksolutions.com/"><img src="images/ayk.jpg" alt="Parceiros Linux Mint" style="height: 60px;"></a>
+        <a href="https://www.eukhost.com/dedicated-servers/"><img src="images/eukhost.jpg" alt="Parceiros Linux Mint"
             style="height: 50px;"></a>
-        <a href="https://www.hellotux.com/"><img src="images/hellotux.gif" alt=""></a>
-        <a href="https://www.nutime.de/"><img src="images/nutime.jpg" alt="" style="height: 60px;"></a>
-        <a href="http://www.goscomb.net/"><img src="images/goscomb.jpg" alt=""></a>
-        <a href="https://duckduckgo.com/?t=lm"><img src="images/ddg.jpg" alt="" style="height: 40px;"></a>
-        <a href="https://www.runesec.com/"><img src="images/runesec.jpg" alt="" style="height: 20px;"></a>
+        <a href="https://www.hellotux.com/"><img src="images/hellotux.gif" alt="Parceiros Linux Mint"></a>
+        <a href="https://www.nutime.de/"><img src="images/nutime.jpg" alt="Parceiros Linux Mint" style="height: 60px;"></a>
+        <a href="https://www.goscomb.net/"><img src="images/goscomb.jpg" alt="Parceiros Linux Mint"></a>
+        <a href="https://duckduckgo.com/?t=lm"><img src="images/ddg.jpg" alt="Parceiros Linux Mint" style="height: 40px;"></a>
+        <a href="https://www.runesec.com/"><img src="images/runesec.jpg" alt="Parceiros Linux Mint" style="height: 20px;"></a>
       </div>
     </section>
   </div>
