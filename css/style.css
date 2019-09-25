@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    text-shadow: 0 0.5px black;
 
 }
 .container{
@@ -9,232 +10,7 @@
     margin: 0 auto;
 }
 
-/* Dhany e Wallyson*/
-.header{
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: #222;        
-  }
 
-  
-  .menu
-  {
-    margin-top: 10px;
-    width: 70%;
-    display: block;
-    float: left;
-    background-color: #333;
-  }
-  .menu__item
-  {
-    display: inline-block;    
-  }
- 
-  .menu__item:hover
-  {
-    background-color:#60B752;
-  }
-  .menu__item a{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: none;
-    color: white;
-    width: 100px;
-    height: auto;
-    display: inline-block;   
-    margin-left: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .logo{
-    width: 30%;
-    display: block;
-    float: right;
-  }
-  .logo img{
-    width: 300px;
-    display: block;
-    margin-left: 0px;
-    margin-right: 50px;
-  }
-  
-  /*Menu lateral*/
-  .checkmenu{
-    display: none;
-  }
-  
-  .barra_lateral{
-    width: 300px;
-    height: 100%;
-    margin-top: 50px;
-    position: absolute;
-    transition: all .2s linear;
-    background: #000;
-    left: -300px;
-  }
-  .lmenu{          
-      display:block;         
-      float: none;
-   }
-  .lmenu__item
-  { 
-    width: 100%;
-    display: block;
-  }
-  
-  .lmenu__item a{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: none;
-    color: white;
-    width: 100px;
-    height: auto;
-    display: inline-block;           
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: left;
-  }
-
-  .lmenu__item:hover
-  {
-    background-color:#60B752;
-  }
-  .checkmenu:checked ~ .barra_lateral
-  {          
-    transform: translateX(300px);
-  }
-  .lheader{        
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    background-color:rgba(8, 7, 7, 0.76);
-  }
-  .menuico {
-    width: 70%;
-    display: block;
-    float: left;
-    margin-bottom: 10px;
-    padding: 10px;
-
-  }
-  .llogo
-  {
-    width: 30%;
-    display: block;
-    float: right;
-    margin: 5px;       
-    margin-right: 30px;
-  }
-
-  .llogo img{
-    width: 50px;
-    display: block;
-    float: right;
-  }
-
-  /*Enquanto maior que 800px*/
-  @media (min-width:800px){
-    .lheader{
-      display: none;
-    }
-    .menuico {
-      display: none;
-    }
-    .llogo
-    {
-      display: none;
-    }
-
-    .llogo{
-      display: none;
-    }
-
-    .barra_lateral{
-      display: none;
-    }
-  }
-  
-  /*Enquanto menor que 800px*/
-  @media (max-width:800px){
-      .header{
-        display: none;
-      }
-      .menu{
-        display: none;
-      }
-      .menu__item
-      { 
-        display: none;
-      }
-      .logo{
-        display: none;
-      }
-      .logo img{
-        display: none;
-      }
-  }
-
-  .main_page
-  {
-    display: flex;
-    flex-direction: row;      
-    width: 100%;      
-  }
-  .main_page img
-  {  
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
-  .col-50{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    text-align: center;     
-    justify-content: center;      
-  }
-  @media (max-width:800px){
-    .col-50{
-      width: 100%;
-    }
-    .main_page img{
-      height: 800px;
-    }
-  }
-  .main__info{
-    display: block;
-    margin-left: 15px;
-  }
-  .col-50 h1{
-    display: block;
-    position: relative;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    color: white;
-    font-family: Roboto;
-    font-style: bold;
-  }
-  .col-50 button{
-    position: relative;
-    height:  50px;
-    width: 200px;
-    text-align: center;
-    margin-left: 10px;
-    font-family: Roboto;
-    font-style: bold;
-    color: white;
-    background-color: #60B752;
-    border-style: none;
-    border-radius: 5px;      
-  }
 /* parte que o manoel fez */
 .desc__quadro{
     display: flex;
@@ -516,6 +292,7 @@
 }
 /*botao subir*/
 #Btn__subir {
+  text-shadow: 0 0.2px black;
   display: none;
   position: fixed;
   bottom: 20px;
@@ -524,7 +301,7 @@
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: rgb(27, 172, 27);
+  background-color: rgb(56, 182, 36);
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -532,7 +309,7 @@
 }
 @media(max-width:800px){
   #Btn__subir{
-   background-color:rgb(27, 172, 27);
+   background-color:rgb(56, 182, 36);
    color: white;
    border-radius: 50px;
    font-size: 9px;
@@ -544,8 +321,9 @@
   background-color: #555;
 }
 /* titulo DUAL BOOT */
-.desc__titulo_1{ 
-    background-color: #60B752;
+.desc__titulo_1{
+    text-shadow: 0 0.5px black;
+    background-color: rgb(56, 182, 36);
     font-size: 24px;
     color:rgb(253, 253, 253);
     padding: 20px;
@@ -617,8 +395,9 @@
     }
 }
 /* titulo Menu */
-.desc__titulo_2{ 
-    background-color: #60B752;
+.desc__titulo_2{
+    text-shadow: 0 0.5px black;
+    background-color: rgb(56, 182, 36);
     font-size: 24px;
     color:rgb(253, 253, 253);
     padding: 20px;
@@ -694,7 +473,8 @@
 
 /* titulo TERMINAL */
 .desc__titulo_3{ 
-    background-color: #60B752;
+    text-shadow: 0 0.5px black;  
+    background-color: rgb(56, 182, 36);
     font-size: 24px;
     color:rgb(253, 253, 253);
     padding: 20px;
@@ -786,7 +566,8 @@
     padding: 20px;
 }
 .title_mint h1{
-    background-color: rgba(85, 198, 67, 0.92);
+    text-shadow: 0 0.5px black;
+    background-color: rgb(56, 182, 36);
     font-size: 30px;
     font-style:bold;
     display: inline;
@@ -849,7 +630,8 @@
 
 /* titulo Gerenciador de aplicativos */
 .desc__titulo_4{ 
-    background-color: #60B752;
+    text-shadow: 0 0.5px black;
+    background-color: rgb(56, 182, 36);
     font-size: 24px;
     color:rgb(253, 253, 253);
     padding: 20px;
@@ -1017,12 +799,13 @@
   font-family: 'Roboto', sans-serif;
 }
 .titulo{
-  background-color: #60B752;
+  background-color: rgb(56, 182, 36);
   text-align: center;
   border-radius: 10px;
 }
 .dowlload__botao{
-  background-color: #60B752;
+  text-shadow: 0 0.5px black;
+  background-color: rgb(56, 182, 36);
   text-align: center;
   border-radius: 10px;
   margin:0;
