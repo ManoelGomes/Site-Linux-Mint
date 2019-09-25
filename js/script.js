@@ -29,7 +29,7 @@ function EnableMenu(){
 });
 
  window.addEventListener('resize', function(){
-     
+
     var img = document.getElementById("main_img");  
     var logo = document.getElementById("img_logo");    
 
@@ -52,11 +52,11 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
